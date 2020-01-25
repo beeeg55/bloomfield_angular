@@ -15,18 +15,26 @@ export class ProductDetailComponent implements OnInit {
   product: IProduct;
   constructor(private route: ActivatedRoute) {
     console.log(this.route.snapshot.paramMap.get('id'))
+    console.log(this.route.snapshot.paramMap.get('name'))
    }
 
   ngOnInit() {
     let id = +this.route.snapshot.paramMap.get('id');
+    let name = this.route.snapshot.paramMap.get('name');
+    let code = this.route.snapshot.paramMap.get('code');
+    let dcp = this.route.snapshot.paramMap.get('dcp');
+    let date = this.route.snapshot.paramMap.get('date');
+    let price = +this.route.snapshot.paramMap.get('price');
+    let rate = +this.route.snapshot.paramMap.get('rate');
+
     this.product = {
         "productId": id,
-        "productName": "Leaf Rake",
-        "productCode": "GDN-0011",
-        "releaseDate": "March 19, 2016",
-        "description": "Leaf rake with 48-inch wooden handle.",
-        "price": 19.95,
-        "starRating": 3.2,
+        "productName": name,
+        "productCode": code,
+        "releaseDate": date,
+        "description": dcp,
+        "price": price,
+        "starRating": rate,
         "imageUrl": "https://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png"
       };
   }
