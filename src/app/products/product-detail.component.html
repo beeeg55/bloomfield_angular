@@ -1,8 +1,8 @@
-<div class='card' *ngIf='products'>
+<div class='card' *ngIf='product'>
     <div class='card-header'>
         {{pageTitle + ': ' + product.productName}}
     </div>
-    <div>
+    <div class="card-body">
         <table>
             <tr>
                 <td>Name:</td>
@@ -34,6 +34,10 @@
              [style.width.px] = 'imageMargin'>
     </div>
     <div class='card-header'>
-        <button>back</button>
+        <button class='btn btn-outline-secondary'
+                (click)='onBack()'
+                style='width:80px'>
+                <i class = 'fa fa-chevron-left'></i> Back
+            </button>
     </div>
 </div>
