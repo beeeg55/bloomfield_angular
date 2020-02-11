@@ -8,7 +8,6 @@ import { ViewModule} from './view/view.module';
 import { ConvertToSpacePipe } from './shared/convert-to-spacespipe';
 import { RelatedProductsModule} from './related-products/related-products.module';
 import { StarComponent } from './shared/star.component';
-import { reverseStringPipe } from './shared/reverse-stringpipe';
 import { HttpClientModule } from '@angular/common/http';
 import { WelcomeComponent } from './home/welcome.component';
 import { ProductDetailComponent } from './products/product-detail.component';
