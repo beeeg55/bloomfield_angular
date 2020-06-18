@@ -30,7 +30,11 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 <b>프로젝트 구조</b>
 
-![image-20200618172758646](C:\Users\LG\AppData\Roaming\Typora\typora-user-images\image-20200618172758646.png)
+![project scaffolding](src/assets/images/구조.JPG)
+
+
+
+
 
 <b>프로젝트 언어 : TypeScript</b>
 
@@ -64,11 +68,11 @@ Services : 앱의 코드를 공유하거나 구성하는데 사용되고, 주로
 
 binding
 
-- Interpolation
+- Interpolation {}
 
-- Property Binding
-- Event Binding
-- Two-way Binding
+- Property Binding []
+- Event Binding ()
+- Two-way Binding ( Property Binding + Event Binding)
 
 Dependency Injection 은 서비스를 생성하고 클래스에 보낼 때 사용된다. DI 에 Provider 를 제공함으로써 어떤 클래스가 서비스 생성이 필요한지를 알 수 있다.
 
