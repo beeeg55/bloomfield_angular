@@ -13,7 +13,8 @@ import { map, tap, catchError } from 'rxjs/operators';
 
 export class ProductService {
     
-    private productUrl: string = 'https://f7vxewxmz9.execute-api.us-east-1.amazonaws.com/products/getproduct';
+    //private productUrl: string = 'https://f7vxewxmz9.execute-api.us-east-1.amazonaws.com/products/getproduct';
+    private productUrl: string = './../api/products.json';
 
     constructor(private http: HttpClient) {}
     
